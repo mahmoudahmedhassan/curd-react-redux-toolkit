@@ -1,0 +1,17 @@
+.header{
+    background-color: chocolate;
+    display:flex;
+    justify-content:space-around;
+    height: 80px;
+    align-items:center;
+    text-transform: capitalize;
+    color: #fff;
+}
+.login{
+    width: 100px;
+    height: 50px;
+    background: #767676;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    cursor: pointer;
+}

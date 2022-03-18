@@ -1,0 +1,28 @@
+ // reducers: {
+  //     postes :(state,action)=>{ 
+  //        state.posts.push(action.payload);
+  //       },
+  //      deletePost:(state,action)=>{
+  //        console.log(action)
+  //        state.posts=state.posts.filter(post=>post.id !== action.payload)
+  //      },
+  //      editPost:(state)=>{
+  //        state.edit =true
+  //      },
+  //      updatePosts:(state,action)=>{
+  //        state.posts.map(post => {
+  //             if(post.id === action.payload.id){
+  //             post.title = action.payload.title;
+  //             post.post = action.payload.post;
+  //          }
+  //          console.log(action.payload)
+  //          console.log(state.posts)
+  //          state.edit =true
+  //        }) 
+
+  //      }
+
+  // },
+
+//   "start": "react-scripts start",
+// "start": "json-server -w data/db.json -p 4000 "
