@@ -6,26 +6,26 @@ const URL = 'http://localhost:4000/posts';
 // fetching
 
 export const fetchPosts = createAsyncThunk('post/fetchPosts',
-  // async (_, thunkAPI) => {
-  //   // const { rejectWithValue } = thunkAPI;
+  async (_, thunkAPI) => {
+    const { rejectWithValue } = thunkAPI;
 
-  //   // try {
-  //   //   const res = await fetch(URL);
-  //   //   const data = await res.json();
-  //   //   return data
+    try {
+      const res = await fetch(URL);
+      const data = await res.json();
+      return data
 
-  //   // } catch (err) {
-  //   //   return rejectWithValue(err.message)
-  //   // }
-  // }
+    } catch (err) {
+      return rejectWithValue(err.message)
+    }
+  }
  
   //===== anther answer ====
 
-  axios.get(URL).then((response) => {
-     return response
-   }).catch((error) => {
-    return(error.message)
-   })
+  // axios.get(URL).then((response) => {
+  //    return response
+  //  }).catch((error) => {
+  //   return(error.message)
+  //  })
     
 )
 
@@ -180,7 +180,8 @@ export const postSlice = createSlice({
           post.description =action.payload.editDescription;
           toast.success("You UpDate Your Post 👌",{
             position:'bottom-left'
-          })
+          }
+          )
       }})
       
        localStorage.setItem("updatapost", JSON.stringify(state.posts));

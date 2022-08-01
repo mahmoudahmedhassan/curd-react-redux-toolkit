@@ -48,8 +48,6 @@ function Register() {
         validationSchema
     });
 
-
-
     return (
 
         <form className={classes.form_register} autoComplete="off" onSubmit={formik.handleSubmit}>

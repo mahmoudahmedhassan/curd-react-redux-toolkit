@@ -1,11 +1,8 @@
-import React, { Component } from 'react'
-
-export class hey extends Component {
-  render() {
-    return (
-      <div>hey</div>
-    )
-  }
-}
-
-export default hey
+ import React from 'react'
+ 
+ export default function hey() {
+   return (
+     <div>hey</div>
+   )
+ }
+ 

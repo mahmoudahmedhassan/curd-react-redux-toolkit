@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 import classes from './inputs.module.css';
-import {  useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import {insertPost} from '../../redux//index';
 import {v4 as uuid} from 'uuid';
 
@@ -12,13 +12,14 @@ import {v4 as uuid} from 'uuid';
         title: '',
         description: ''
     })
-         const isValid = (data.title && data.description) != null && (data.title.length &&data.description.length ) > 0;
+   const isValid = (data.title && data.description) != null && (data.title.length &&data.description.length ) > 0;
  
     const handelOnChange = ({target}) => {
         let values = {...data}
            values[target.id]=target.value
            setData(values)
      }
+     console.log(data)
 
     const handeClick =(e)=>{
         e.preventDefault();
@@ -28,9 +29,9 @@ import {v4 as uuid} from 'uuid';
             title :'',
             description:'',
         });
-         if(!isValid){
-             alert('Please enter a valid')
-         }
+        //  if(!isValid){
+        //      alert('Please enter a valid')
+        //  }
     }
 
     return (
