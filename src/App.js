@@ -3,6 +3,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Inputs from './Components/inputs/Inputs';
 import Header from './Components/header/Header';
 import ListItems from './Components/items/ListItems';
+import Hey from './test/hey'
 import { ToastContainer } from 'react-toastify';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Header/>
       <Inputs/>
       <ListItems/>
+      <Hey/>
      </div>
   );
 }
