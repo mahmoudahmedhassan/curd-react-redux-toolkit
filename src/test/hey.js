@@ -8,8 +8,7 @@ function Hey() {
       setCount(items);
     }
   }, []);
-  
-  useEffect(() => {
+   useEffect(() => {
     localStorage.setItem('items', JSON.stringify(count));
   }, [count]);
   
@@ -19,4 +18,5 @@ function Hey() {
     >{count}</div>
   )
 }
-export default Hey
+ export default Hey
+
